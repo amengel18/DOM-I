@@ -48,3 +48,17 @@ navBar.forEach((nav, index) =>{
 
 console.log(navBar)
 
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let h1 = document.querySelector(".cta-text h1")
+h1.innerHTML = siteContent["cta"]["h1"]
+
+let button = document.querySelector(".cta-text button")
+button.innerHTML = siteContent["cta"]["button"]
+
+let midImg = document.getElementById("mid-img");
+midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+
+
