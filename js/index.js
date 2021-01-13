@@ -41,27 +41,10 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let newA = document.createElement("a")
-newA.textContent = 'Services' 
-document.querySelector("nav").appendChild(newA)
+let navBar = document.querySelectorAll("nav a");
+navBar.forEach((nav, index) =>{
+  nav.innerHTML = siteContent.nav[`nav-item-${index + 1}`]
+})
 
-let newA1 = document.createElement("a")
-newA1.textContent = 'Product'
-document.querySelector("nav").appendChild(newA1)
-
-let newA2 = document.createElement("a")
-newA2.textContent = 'Vision'
-document.querySelector("nav").appendChild(newA2)
-
-let newA3 = document.createElement("a")
-newA3.textContent = 'Features'
-document.querySelector("nav").appendChild(newA3)
-
-let newA4 = document.createElement("a")
-newA4.textContent = 'About'
-document.querySelector("nav").appendChild(newA4)
-
-let newA5 = document.createElement("a")
-newA5.textContent = 'Content'
-document.querySelector("nav").appendChild(newA5)
+console.log(navBar)
 
