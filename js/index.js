@@ -41,12 +41,16 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+//  Header
+
 let navBar = document.querySelectorAll("nav a");
 navBar.forEach((nav, index) =>{
   nav.innerHTML = siteContent.nav[`nav-item-${index + 1}`]
 })
 
 console.log(navBar)
+
+// cta content
 
 let ctaImg = document.getElementById("cta-img");
 ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
@@ -57,8 +61,20 @@ h1.innerHTML = siteContent["cta"]["h1"]
 let button = document.querySelector(".cta-text button")
 button.innerHTML = siteContent["cta"]["button"]
 
-let midImg = document.getElementById("mid-img");
+//  main content
+
+let midImg = document.getElementById("middle-img");
 midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+const mainHeader = document.querySelectorAll(".text-content h4")
+const mainP = document.querySelectorAll(".text-content p")
+
+mainHeader[0].textContent = siteContent["main-content"]["features-h4"]
+mainP[0].textContent = siteContent["main-content"]["features-content"]
+
+mainHeader[1].textContent = siteContent["main-content"]["about-h4"]
+mainP[1].textContent = siteContent["main-content"]["about-content"]
+
 
 
 
