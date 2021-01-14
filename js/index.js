@@ -75,6 +75,19 @@ mainP[0].textContent = siteContent["main-content"]["features-content"]
 mainHeader[1].textContent = siteContent["main-content"]["about-h4"]
 mainP[1].textContent = siteContent["main-content"]["about-content"]
 
+//  bottom content
+
+mainHeader[2].textContent = siteContent["main-content"]["services-h4"]
+mainP[2].textContent = siteContent["main-content"]["services-content"]
+
+mainHeader[3].textContent = siteContent["main-content"]["product-h4"]
+mainP[3].textContent = siteContent["main-content"]["product-content"]
+
+mainHeader[4].textContent = siteContent["main-content"]["vision-h4"]
+mainP[4].textContent = siteContent["main-content"]["vision-content"]
+
+
+
 
 
 
